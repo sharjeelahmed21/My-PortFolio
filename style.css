@@ -231,3 +231,145 @@ body.dark-mode .socials a {
 body.dark-mode footer {
   background: #111;
 }
+
+/* ========================= */
+/* 📱 Tablet (up to 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text h2 {
+    font-size: 18px;
+  }
+
+  .project-card {
+    width: 220px;
+  }
+}
+
+/* ========================= */
+/* 📱 Mobile (up to 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navlist {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navlist li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text h2 {
+    font-size: 16px;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
+
+/* ========================= */
+/* 📱 Small Mobile (up to 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .navlist a {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .skills-list li {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+
+/* Hamburger hidden on desktop */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
+}
+
+/* Mobile menu style */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show on mobile */
+  }
+
+  .navlist {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    background: #2c3e50;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    transition: left 0.3s ease;
+    padding: 20px 0;
+  }
+
+  .navlist li {
+    margin: 15px 0;
+  }
+
+  .navlist.active {
+    left: 0; /* Slide in when active */
+  }
+}
+
