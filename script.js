@@ -59,3 +59,16 @@ toggleBtn.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
+
+const menuIcon = document.getElementById("menuIcon");
+const navlist = document.querySelector(".navlist");
+
+menuIcon.addEventListener("click", () => {
+  navlist.classList.toggle("active");
+
+  // Change icon when open/close
+  menuIcon.innerHTML = navlist.classList.contains("active") 
+    ? "<i class='bx bx-x'></i>" 
+    : "<i class='bx bx-menu'></i>";
+});
