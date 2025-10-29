@@ -372,48 +372,7 @@ body.dark-mode footer {
     left: 0; /* Slide in when active */
   }
 }
-.project-buttons {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
 
-.project-buttons .btn {
-  background: #1abc9c;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.project-buttons .btn:hover {
-  background: #16a085;
-}
-
-.project-buttons .btn-outline {
-  background: transparent;
-  color: #1abc9c;
-  border: 1px solid #1abc9c;
-}
-
-.project-buttons .btn-outline:hover {
-  background: #1abc9c;
-  color: white;
-}
-
-/* Dark Mode Compatibility */
-body.dark-mode .project-buttons .btn-outline {
-  color: #1abc9c;
-  border-color: #1abc9c;
-}
-
-body.dark-mode .project-buttons .btn-outline:hover {
-  background: #1abc9c;
-  color: #fff;
-}
 
 
 
